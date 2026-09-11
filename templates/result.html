@@ -121,11 +121,11 @@
 
     <div class="card-custom">
 
-        <h1>📊 Analysis Result</h1>
+        <h1>Analysis Result</h1>
 
         <!-- Score -->
         <div class="score-badge mb-4 {% if score > 50 %}skills-good{% else %}skills-missing{% endif %}">
-            🎯 Your Score: {{ score }}%
+            Your Score: {{ score }}%
         </div>
 
         <div class="row g-4">
@@ -133,7 +133,7 @@
             <!-- Skills Found -->
             <div class="col-md-6">
                 <div class="section-box">
-                    <h3>✅ Skills Found ({{ skills|length }})</h3>
+                    <h3>Skills Found ({{ skills|length }})</h3>
                     <ul class="list-group">
                         {% for skill in skills %}
                             <li class="list-group-item skills-good">
@@ -147,7 +147,7 @@
             <!-- Missing Skills -->
             <div class="col-md-6">
                 <div class="section-box">
-                    <h3>❌ Missing Skills ({{ missing|length }})</h3>
+                    <h3>Missing Skills ({{ missing|length }})</h3>
                     <ul class="list-group">
                         {% for skill in missing %}
                             <li class="list-group-item skills-missing">
@@ -162,7 +162,7 @@
 
         <!-- Button -->
         <a href="/" class="btn btn-custom w-100">
-            🔄 Analyze Another Resume
+            Analyze Another Resume
         </a>
 
     </div>
